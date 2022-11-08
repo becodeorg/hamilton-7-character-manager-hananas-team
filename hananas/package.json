@@ -1,5 +1,5 @@
 {
-  "name": "character-manager",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.18",
-    "sass": "^1.56.0",
     "tailwindcss": "^3.2.2",
     "vite": "^3.2.3"
   }
