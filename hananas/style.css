@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+/* @layer base{
     h1{
     @apply text-blue-600 text-xl -my-3;
     } 
@@ -15,4 +15,4 @@
         @apply m-5 shadow-lg rounded-lg overflow-hidden;
 
     }
-}
+} */
