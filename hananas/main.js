@@ -1,2 +1,3 @@
 import './style.css';
-import axios from "axios";
+import './axios.js';
+
