@@ -35,3 +35,14 @@ const displayCharacter = async () => {
 };
 
 displayCharacter();
+
+
+//
+
+function commande(nom, argument) {
+  if (typeof argument === "undefined") {
+    argument = ""; // Exécuter la commande
+  }
+  document.execCommand(nom, false, argument); // pour écrire du texte et le mettre en forme.
+}
+
