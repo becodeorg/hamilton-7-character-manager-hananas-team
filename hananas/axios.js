@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const APIurl = "https://character-database.becode.xyz/characters";
 
-let characterImage= document.querySelector("#character-image");
+let characterImage = document.querySelector("#character-image");
 let characterName = document.querySelector("#character-name");
 let characterCard = document.querySelector("#character-card");
 let characterSMdescription = document.querySelector("#character-sdescription");
@@ -52,30 +52,4 @@ displayCharacter();
 
 
 
-        // forEach((item) => {
-        //     const containerCharacter = document.createElement("div");
-        //     containerCharacter.setAttribute("class", "container_character");
-        //     container.appendChild(containerCharacter);
-
-        //     const divImg = document.createElement("div");
-        //     divImg.setAttribute("class", "divImg");
-        //     containerCharacter.appendChild(divImg);
-
-        //     const image = document.createElement("img");
-        //     image.src = "data:image/png;base64, " + item.image;
-        //     image.alt = "illustration";
-        //     divImg.appendChild(image);
-
-        //     const name = document.createElement("h2");
-        //     name.textContent = item.name;
-        //     containerCharacter.appendChild(name);
-
-        //     const shortDescriprt = document.createElement("p");
-        //     shortDescriprt.textContent = item.shortDescription;
-        //     containerCharacter.appendChild(shortDescriprt);
-
-        //     const linkProfile = document.createElement("button");
-        //     linkProfile.setAttribute("class", "link_profile");
-        //     linkProfile.textContent = "profile";
-        //     containerCharacter.appendChild(linkProfile);
-        // })
+        
