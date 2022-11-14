@@ -29,26 +29,37 @@
                     class="character-image-update align-middle w-32 h-32 rounded-full shadow-lg mx-auto"
                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                     alt="product designer">
+
                 <h1 id="character-name-update" class="character-name-update text-center text-lg text-gray-700"> UPLOAD IMAGE </h1>
-                <!--   <h3 class="text-sm text-gray-400 "> Creative Director </h3>-->
-                <p id="character-sdescription-update"
-                    class="character-sdescription-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold -text-xs text-gray-400 "> Lorem ipr sit
-                    amet.</p>
+                
+        <div>
+            <label
+                class="character-fdescription-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400"
+                for="uname">
+                <input type="text" class="text w-10 bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400" id="uname" name="name" placeholder="Enter the name" />
+            </label>
+        </div>
+
+
+                    
                 <p id="character-fdescription-update"
                     class="character-fdescription-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400"> Lorem ipr
                     sit amet, consectetur adipiscing elit, or incididunt Lorem <br> 
-                    it amet consectetur adipisicing elit.Eos sunt quidem explicabo dicta dolore perferendis natus, <br>
-                    saepe laborum deleniti xplicabo dicta dolore perferendis dolorum!.tetur adipisicing elit.Eos sunt ,
+                    it amet consectetur adipisicing elit.Eolore perferendis natus, <br>
+                    saepe laborum deleniti xplicabo dicos sunt ,
                     <br>
                     saepe laborum deleniti xplicabo dicta dolore perferendis dolorum!
                 </p>
+
+
+                
 
 <!------------------------------------------------------------ BOUTON   ----------------------------------------------->
     <div id="character-wysiwyg-update" class="editeur bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm text-gray-800">
         
         <input type="button" value="Gras" class="button-bold font-bold;" />
         <input type="button" value="Italic" class="button-italic italic;" />
-        <input type="button" value="S" class="button-underline underline;"/>
+        <input type="button" value="Souligner" class="button-underline underline;"/>
         <input type="button" value="Image" onclick="commande('insertImage');"/>
             
         <select onchange="commande('heading', this.value); this.selectedIndex = 0;">
@@ -62,7 +73,7 @@
             </select>
         <div id="editeur" contentEditable>
             <input type="button" onclick="resultat();" value="" /><br />
-                <textarea id="resultat" class="textarea h-96 w-full bg-red-700;"></textarea>
+                <textarea id="resultat" class="textarea h-60 w-full bg-red-700;"></textarea>
         </div>
     </div>
 
