@@ -17,7 +17,7 @@ const displayCharacter = async () => {
             characterName.innerText =data[i].name;
             characterSMdescription.innerText= data[i].shortDescription;
             characterImage.src = `data:image/gif;base64,${data[i].image}`;
-            CardButton.href = `http://localhost:5173/src/single_character.html?id=${data[i].id}`;
+            CardButton.href = `./src/single_character.html?id=${data[i].id}`;
             let cloneCard = characterCard.cloneNode(true);
 
             CardContainer.appendChild(cloneCard);
