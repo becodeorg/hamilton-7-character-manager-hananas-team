@@ -12,33 +12,41 @@
 <Header>
     <!------------------------------------------------------------  NAV   ----------------------------------------------->
 
-    <nav id="character-title" class="character-title font-sans flex flex-col text-inherit sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-dark shadow sm:items-baseline w-full">
         <div class="mb-2 sm:mb-0">
-            <a href="http://localhost:5173/" class="text-4xl font-semibold leading-normal mb-2 text  text-gray-700">Character manager</a>
+            <a href="http://localhost:5173/" class="text-4xl font-semibold leading-normal mb-2 text-white mb-2 hover:text-blue-dark">Character manager</a>
         </div>
     </nav>
-</Header>
+    </Header>
 <!------------------------------------------------------------  MAIN   ----------------------------------------------->
-<main id="character-page" class="character-page">
+<main id="character-page" class="character-page relative">
+    
     <div id="character-card" class="character-card flex items-center justify-center h-screen w-screen bg-gradient-to-br from-indigo-500 to-indigo-600">
+        <!-- <div id="delete-alert" class=" absolute top-10 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" role="alert">
+            <strong class="font-bold">The creator has no mercy !</strong>
+            <span class="block sm:inline">You just deleted the character, please return to the <a href="http://localhost:5173/" class="font-bold">Homepage</a></span>
+            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+            </span>
+        </div> -->
         <div class=" bg-white font-semibold text-center rounded-3xl border w-70 my-4 h-180 shadow-lg">
             <img id="character-image" class="character-image align-middle w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer">
             <h1 id="character-name" class="character-name text-lg text-gray-700"> John Does</h1>
         <!--   <h3 class="text-sm text-gray-400 "> Creative Director </h3>-->
-            <p id="character-sdescription" class="character-sdescription-text-xs text-gray-400 mt-20"> Lorem ipr sit amet, consectetur adipiscing elit, or incididunt . </p>
+            <p id="character-sdescription" class="character-sdescription-text-xs text-gray-400 mt-10"> Lorem ipr sit amet, consectetur adipiscing elit, or incididunt . </p>
             <p id= "character-fdescription" class="character-fdescription text-sm text-black-400 mt-20 "> Lorem ipr sit amet, consectetur adipiscing elit, or incididunt Lorem <br> s
                 it amet consectetur adipisicing elit.Eos sunt quidem explicabo dicta dolore perferendis natus, <br>
                 saepe laborum deleniti xplicabo dicta dolore perferendis dolorum!.tetur adipisicing elit.Eos sunt , <br>
                 saepe laborum deleniti xplicabo dicta dolore perferendis dolorum! </p>
 <!------------------------------------------------------------ BOUTON   ----------------------------------------------->
             <div id="character-button" class="character-button p-4 mb-30" >
-                <button id="character-update" class="character-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide bg-gradient-to-br"> Update</button>
-                <button id="character-delete" class="character-delete bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide bg-gradient-to-br">Delete </button>
+                <button id="character-update" class="character-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-grey font-semibold uppercase tracking-wide bg-gradient-to-br"> Update</button>
+                <button id="character-delete" class="character-delete bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-grey font-semibold uppercase tracking-wide bg-gradient-to-br">Delete </button>
             </div>
         </div>
     </div>
+    
 </main>
-<script type="module" src="../main.js"></script>
+<script type="module" src="../singleCharacter.js"></script>
 </body>
 </html>
 
