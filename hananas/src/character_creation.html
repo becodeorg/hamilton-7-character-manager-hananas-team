@@ -5,87 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Character Update</title>
 </head>
 <!------------------------------------------------------------    BODY   ----------------------------------------------->
 <body>
 <!------------------------------------------------------------    HEADER   ----------------------------------------------->
-    <Header>
+<Header>
 <!------------------------------------------------------------  NAV   ----------------------------------------------->
-        <nav id="character-update"
-            class="character-title-update font-sans flex flex-col text-inherit sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
-            <div class="mb-2 sm:mb-0">
-                <a href="http://localhost:5173/"
-                    class="text-4xl font-semibold leading-normal mb-2 text  text-gray-700">Character manager</a>
-            </div>
-        </nav>
-    </Header>
+    <nav id="character-update"
+        class="character-title-update font-sans flex flex-col text-inherit sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0">
+            <a href="http://localhost:5173/"
+                class="text-4xl font-semibold leading-normal mb-2 text text-gray-700">Character Manager</a>
+        </div>
+    </nav>
+</Header>
 <!------------------------------------------------------------  MAIN   ----------------------------------------------->
     <main id="character-page-update" class="character-page-update">
-        <div id="character-card-update"
+
+        <div id="character-card-container"
             class="character-card-update flex items-center justify-center h-screen w-screen bg-gradient-to-br from-indigo-500 to-indigo-600">
-            <div class=" bg-white font-semibold  rounded-3xl border w-70 my-4 h-180 shadow-lg">
-                <img id="character-image-update"
-                    class="character-image-update align-middle w-32 h-32 rounded-full shadow-lg mx-auto"
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt="product designer">
+            <div id="character-card" class="bg-white font-semibold w-100 rounded-3xl my-4 h-180 shadow-lg flex flex-col">
 
-                <h1 id="character-name-update" class="character-name-update text-center text-lg text-gray-700"> UPLOAD IMAGE </h1>
-                
-        <div>
-            <label
-                class="character-fdescription-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400"
-                for="uname">
-                <input type="text" class="text w-10 bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400" id="uname" name="name" placeholder="Enter the name" />
-            </label>
-        </div>
+<!--------------------------------------------------------------------essaye d upload image -------------------------------------------------------------------------------->
+                <section class="form-create flex items-center justify-center align-middle w-32 h-32 rounded-full shadow-lg mx-auto">
+                        <label for="fileId" class="file-style justify-center text-gray-700">Your image</label>
+                </section>
+<!-------------------------------------------------------------------- ESPACE DESCRITPION        --------------------------------------------------------------------------------------->
 
-
-                    
-                <p id="character-fdescription-update"
-                    class="character-fdescription-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400"> Lorem ipr
-                    sit amet, consectetur adipiscing elit, or incididunt Lorem <br> 
-                    it amet consectetur adipisicing elit.Eolore perferendis natus, <br>
-                    saepe laborum deleniti xplicabo dicos sunt ,
-                    <br>
-                    saepe laborum deleniti xplicabo dicta dolore perferendis dolorum!
-                </p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg" class="character-upload bg-indigo-600 px-8 py-2 mt-8 rounded-3xl">
+                </form>                
+                <input placeholder="Name" type="text" class="character-sdescrption-update  bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400 w-full">  
+                <input placeholder="Enter a Short Description " type="text"
+                        class="character-fdescrption-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400 w-full ">
+                <textarea placeholder="Description" class="description-upload bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm  text-gray-400 w-full"></textarea>
 
 
-                
-
-<!------------------------------------------------------------ BOUTON   ----------------------------------------------->
-    <div id="character-wysiwyg-update" class="editeur bg-indigo-600 px-8 py-2 mt-8 rounded-3xl font-semibold text-sm text-gray-800">
-        
-        <input type="button" value="Gras" class="button-bold font-bold;" />
-        <input type="button" value="Italic" class="button-italic italic;" />
-        <input type="button" value="Souligner" class="button-underline underline;"/>
-        <input type="button" value="Image" onclick="commande('insertImage');"/>
-            
-        <select onchange="commande('heading', this.value); this.selectedIndex = 0;">
-            <option value="">Titre</option>
-            <option value="h1">Titre 1</option>
-            <option value="h2">Titre 2</option>
-            <option value="h3">Titre 3</option>
-            <option value="h4">Titre 4</option>
-            <option value="h5">Titre 5</option>
-            <option value="h6">Titre 6</option>
-            </select>
-        <div id="editeur" contentEditable>
-            <input type="button" onclick="resultat();" value="" /><br />
-                <textarea id="resultat" class="textarea h-60 w-full bg-red-700;"></textarea>
-        </div>
-    </div>
-
+<!--------------------------------------------------------------------  BUTTON DELETE / Update ------------------------------------------------------------------------------>
 
                 <div id="character-button-update" class="character-button-update text-center p-4 mb-30">
                     <button id="character-update-update"
-                        class="character-update-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide bg-gradient-to-br">
-                        Update
-                    </button>
+                        class="character-update-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl  text-gray-400 font-semibold uppercase tracking-wide bg-gradient-to-br">Update</button>
+
                     <button id="character-delete-update"
-                        class="character-delete-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-800 font-semibold uppercase tracking-wide bg-gradient-to-br">Delete
-                    </button>
+                        class="character-delete-update bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-400 font-semibold uppercase tracking-wide bg-gradient-to-br">Delete</button>
                 </div>
             </div>
         </div>
@@ -93,24 +60,3 @@
     <script type="module" src="../main.js"></script>
 </body>
 </html>
-
-<!--<input type="button" value="G" style="font-weight: bold;" onclick="commande('bold');" />
-        <input type="button" value="I" style="font-style: italic;" onclick="commande('italic');" />
-        <input type="button" value="S" style="text-decoration: underline;" onclick="commande('underline');" />
-        <input type="button" value="Lien" onclick="commande('createLink');" />
-        <input type="button" value="Image" onclick="commande('insertImage');"/>
-            <select onchange="commande('heading', this.value); this.selectedIndex = 0;">
-            <option value="">Titre</option>
-            <option value="h1">Titre 1</option>
-            <option value="h2">Titre 2</option>
-            <option value="h3">Titre 3</option>
-            <option value="h4">Titre 4</option>
-            <option value="h5">Titre 5</option>
-            <option value="h6">Titre 6</option>
-            </select>
-        <div id="editeur" contentEditable>
-            <input type="button" onclick="resultat();" value="" /><br />
-                <textarea id="resultat" class="textarea;"></textarea>
-        </div>
-    </div>
--->
