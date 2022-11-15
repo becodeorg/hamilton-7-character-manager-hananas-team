@@ -36,13 +36,24 @@ const displayCharacter = async () => {
 
 displayCharacter();
 
+// Upload image 
 
-//
+// const file = document.querySelector("#fileId");
+// var base64String = "";
+// function Uploaded() {
+//   var file = document.querySelector("#fileId")["files"][0];
+//   var reader = new FileReader();
+//   reader.onload = function () {
+//     base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
+//     imageBase64Stringsep = base64String;
+//   };
+//   reader.readAsDataURL(file);
+// }
 
-function commande(nom, argument) {
-  if (typeof argument === "undefined") {
-    argument = ""; // Exécuter la commande
-  }
-  document.execCommand(nom, false, argument); // pour écrire du texte et le mettre en forme.
-}
+// file.addEventListener("change", () => {
+//   Uploaded();
+// });
+// console.log(dataArray);
+// // OTHER
+// const spinner = document.querySelector(".spinner");
 
